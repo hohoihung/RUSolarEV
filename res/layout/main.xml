@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/leftlight"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gui_left"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="updateLeftBlinker"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/headlight"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/gui_headlights"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="updateHeadLight" 
+            android:textOff=""
+            android:textOn="" />
+        
+    </LinearLayout>
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="4"
+	    >
+		<TextView 
+			android:id="@+id/value1"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="6"
+		    android:text="@string/hello"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:background="#000"
+	    />
+		<TextView 
+			android:id="@+id/value2"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="6"
+		    android:text="@string/hello"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:background="#000"
+	    />
+		<TextView 
+			android:id="@+id/value3"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="6"
+		    android:text="@string/hello"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:background="#000"
+	    />
+		<TextView 
+			android:id="@+id/value4"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="6"
+		    android:text="@string/hello"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:background="#000"
+	    />
+		<TextView 
+			android:id="@+id/value5"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="6"
+		    android:text="@string/hello"
+		    android:textSize="30sp"
+		    android:gravity="center"
+		    android:background="#000"
+	    />
+	</LinearLayout>
+
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="5"
+	    android:orientation="vertical" >
+
+	    <ToggleButton
+	        android:id="@+id/rightlight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_gravity="right"
+	        android:layout_weight="1"
+	        android:background="@drawable/gui_right"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:onClick="updateRightBlinker"
+	        android:textOff=""
+	        android:textOn="" />
+
+	    <ToggleButton
+	        android:id="@+id/hazardlight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_gravity="left"
+	        android:layout_weight="1"
+	        android:background="@drawable/gui_hazards"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:onClick="updateHazardLight" 
+	        android:textOff=""
+	        android:textOn="" />
+	</LinearLayout>
+ 
+</LinearLayout>
